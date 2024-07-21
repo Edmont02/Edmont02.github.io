@@ -13,6 +13,6 @@ p {
 }
 
 .resize-img {
-    width: 50%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
+    height: 5in; /* Set the height to 5 inches */
+    width: auto; /* Maintain the aspect ratio */
 }
