@@ -9,18 +9,21 @@
         ul, ol {
             margin: 0;
             padding: 0;
+            list-style-position: inside; /* Keeps bullets/numbers inside */
         }
         ul {
-            list-style-type: disc; /* Default bullet points */
+            text-align: center; /* Center-aligns the list items */
         }
         ol {
-            list-style-type: decimal; /* Default numbering */
+            text-align: center; /* Center-aligns the list items */
         }
         li {
-            padding-left: 10px; /* Adjust this value to reduce space */
-            margin-bottom: 5px; /* Optional: Space between items */
+            display: inline-block; /* Align list items inline to center them */
+            text-align: left; /* Aligns text within the list item */
+            padding-left: 20px; /* Adjust this padding as needed */
+            margin: 0; /* Removes default margin */
         }
-    </style>
+  </style>
 </head>
 <body>
   <h1>Portfolio of Emily D. Montgomery</h1>
