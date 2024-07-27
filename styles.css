@@ -95,3 +95,23 @@ body{
     padding:1.5rem 2rem;
   }
 }
+
+@media (max-width:991px){
+  #menu-btn{
+    display: inline-block;
+  }
+
+  .header .navbar{
+    position: absolute;
+    top:100%; right 0;
+    background: #fff;
+    bacground: 30rem;
+  }
+
+  .header .navbar a{
+    display: block;
+    margin: 1.5rem;
+    padding: .5rem;
+    font-size: 2rem;
+  }
+}
