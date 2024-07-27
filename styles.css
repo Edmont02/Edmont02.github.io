@@ -103,10 +103,13 @@ body{
 
   .header .navbar{
     position: absolute;
-    top:100%; right -100%;
+    top:100%; right 0;
     background: #fff;
-    width: 30rem;
-    height: calc(100vh - 9.5rem);
+    background: 30rem;
+  }
+
+  .header .navbar.active{
+    right:0;
   }
 
   .header .navbar a{
