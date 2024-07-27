@@ -55,6 +55,7 @@ body{
 
 .header .logo img{
   height: 6rem;
+  cursor: default;
 }
 
 .header .navbar a{
@@ -67,6 +68,17 @@ body{
   color:var(--main-color);
   border-bottom: .1rem solid var(--main-color);
   padding-bottom:.5rem;
+}
+
+.header .icons div{
+  color: #fff
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.header .icons div hover{
+  color:var(--main-color);
 }
 
 /* media queries */
