@@ -41,6 +41,10 @@ body{
   background: var(--bg);
 }
 
+section{
+  padding:2rem 7%;
+}
+
 .header{
   background: var(--bg);
   display: flex;
@@ -94,6 +98,10 @@ body{
   .header{
     padding:1.5rem 2rem;
   }
+
+  section{
+  padding:2rem;
+}
   
   #menu-btn{
     display: inline-block;
@@ -129,4 +137,22 @@ body{
   background:url(images/vintage-apple-computer.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.home .content{
+  max-width: 60rem;
+}
+
+.home .content h3{
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.home .content p{
+  font-size: 1rem;
+  font-weight: ligther;
+  line-height: 1.8;
+  passing:1rem 0;
+  color: #eee;
 }
