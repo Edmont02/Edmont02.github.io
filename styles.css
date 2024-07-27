@@ -1,6 +1,7 @@
 body {
     font-family: Garamond;
-    background-color: #fffff0;
+    background-color: #faf9f6;
+    color: #d5b3c3
     text-align: center;
 }
 
@@ -27,6 +28,7 @@ nav ul li {
 }
 
 button {
+    background-color: transparent;
     border: none;
     color: #d5b3c3;
     padding: 15px 32px;
@@ -36,10 +38,6 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #b593a3;
 }
 
 main {
