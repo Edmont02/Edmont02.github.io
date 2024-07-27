@@ -10,6 +10,18 @@ header {
     padding: 10px 0;
 }
 
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display list items inline */
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul li {
+    margin: 0 10px; /* Add some space between the buttons */
+}
+
 button {
     background-color: d3d3d3;
     border: none;
@@ -17,6 +29,7 @@ button {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
 button:hover {
