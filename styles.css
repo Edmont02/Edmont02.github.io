@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0; /* Light gray background color */
+    text-align: center;
 }
 
 header {
@@ -50,6 +51,9 @@ button {
 main {
     padding: 20px;
     background-color: #ffffff; /* White background color for the main content */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center children horizontally */
 }
 
 footer {
