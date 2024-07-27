@@ -1,8 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Light gray background color */
+    background-color: #f0f0f0;
     text-align: center;
 }
 
@@ -12,48 +10,21 @@ header {
     padding: 10px 0;
 }
 
-nav li {
-  display: inline;
-  margin-right: 10px;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
 button {
-    background-color: transparent;
+    background-color: d3d3d3;
     border: none;
-    color: #fff;
+    color: black;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
 }
 
+button:hover {
+    background-color: #bfbfbf;
+}
 
 main {
     padding: 20px;
-    background-color: #ffffff; /* White background color for the main content */
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Arrange children in a column */
-    align-items: center; /* Center children horizontally */
 }
 
 footer {
@@ -61,11 +32,11 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: relative;
+    position: relative; /* Changed from absolute */
     width: 100%;
 }
 
 .resize-img {
-    height: 5in;
-    width: auto;
+    height: 5in; /* Set the height to 5 inches */
+    width: auto; /* Maintain the aspect ratio */
 }
