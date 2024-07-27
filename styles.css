@@ -1,12 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: Garamond;
+    background-color: #fffff0;
     text-align: center;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    color: #d5b3c3;
     padding: 10px 0;
 }
 
@@ -28,9 +27,8 @@ nav ul li {
 }
 
 button {
-    background-color: #d3d3d3;
     border: none;
-    color: black;
+    color: #d5b3c3;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -41,7 +39,7 @@ button {
 }
 
 button:hover {
-    background-color: #bfbfbf;
+    background-color: #b593a3;
 }
 
 main {
@@ -49,8 +47,7 @@ main {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    color: #d5b3c3;
     text-align: center;
     padding: 10px 0;
     position: relative; /* Changed from absolute */
