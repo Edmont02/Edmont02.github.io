@@ -68,3 +68,14 @@ body{
   border-bottom: .1rem solid var(--main-color);
   padding-bottom:.5rem;
 }
+
+/* media queries */
+@media (max-width:991px){
+  html{
+    font-size: 55%;
+  }
+
+  .header{
+    padding:1.5rem 2rem;
+  }
+}
