@@ -3,7 +3,7 @@
 :root{
   --main-color: #d3ad7f;
   --black: #13131a;
-  --bg: #010103;
+  --bg: #eeece1;;
   --border: .1rem solid rgba(255,255,255,.3);
 }
 
@@ -172,7 +172,7 @@ section{
 
 .home .content p{
   font-size: 1rem;
-  font-weight: ligther;
+  font-weight: lighter;
   line-height: 1.8;
   passing:1rem 0;
   color: #eee;
