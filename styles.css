@@ -71,7 +71,7 @@ section{
 
 .header .navbar a:hover{
   color:var(--hover-color);
-  border-bottom: .1rem solid var(--main-color);
+  border-bottom: .1rem solid var(--hover-color);
   padding-bottom:.5rem;
 }
 
@@ -137,12 +137,20 @@ section{
     text-align: center;
   }
 
+  .home .content h5{
+    font-size: 3rem;
+  }
+  
   .home .content h3{
     font-size: 4.5rem;
   }
 
+  .home .content h6{
+    font-size: 3rem;
+  }
+
   .home .content p{
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -166,14 +174,24 @@ section{
   max-width: 60rem;
 }
 
+.home .content h5{
+  font-size: 3rem;
+  color: #1fc7ff;
+}
+
 .home .content h3{
-  font-size: 6rem;
-  text-transform: uppercase;
+  font-size: 4.5rem;
+  /* text-transform: uppercase; */
   color: #000080;
 }
 
+.home .content h6{
+  font-size: 3rem;
+  color: #1fc7ff;
+}
+
 .home .content p{
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: lighter;
   line-height: 1.8;
   padding:1rem 0;
