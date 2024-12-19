@@ -9,8 +9,6 @@
     --dark-bg: #13131a; /* Dark mode background */
     --dark-text: white; /* Dark mode text color */
     --dark-header: #1c1c1c; /* Dark mode header */
-    --light-bg: #ffffff; /* Light mode background */
-    --light-text: black; /* Light mode text color */
 }
 
 /* General reset and styles */
@@ -22,7 +20,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform: none;
     transition: 0.2s linear;
 }
 
@@ -44,44 +42,7 @@ body.dark-mode {
             color: var(--hover-color);
         }
 
-    body.dark-mode .toggle-switch .slider {
-        background-color: #555;
-    }
-
-    body.dark-mode .toggle-switch input:checked + .slider {
-        background-color: #1fc7ff;
-    }
-
-/* Light mode styles */
-body.light-mode {
-    background: var(--light-bg);
-    color: var(--light-text);
-}
-
-    body.light-mode .header {
-        background: var(--light-bg);
-    }
-
-    body.light-mode .navbar a {
-        color: var(--main-color);
-    }
-
-        body.light-mode .navbar a:hover {
-            color: var(--hover-color);
-        }
-
-    body.light-mode .toggle-switch .slider {
-        background-color: #ccc;
-    }
-
-    body.light-mode .toggle-switch input:checked + .slider {
-        background-color: #1fc7ff;
-    }
-
-body {
-    height: 100%;
-}
-
+/* Scrollbar styles */
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -93,19 +54,21 @@ html {
         width: 0.8rem;
     }
 
-    html::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
     html::-webkit-scrollbar-thumb {
         background: #000080;
         border-radius: 5rem;
     }
 
+/* General Layout */
+body {
+    height: 100%;
+}
+
 section {
     padding: 2rem 7%;
 }
 
+/* Header */
 .header {
     display: flex;
     align-items: center;
@@ -146,55 +109,10 @@ section {
             color: var(--hover-color);
         }
 
+/* Navbar Mobile Toggle */
 #menu-btn {
     display: none;
 }
-
-/* Toggle Switch Styles */
-.toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-    .toggle-switch input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-
-    .toggle-switch .slider {
-        position: absolute;
-        cursor: pointer;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        transition: 0.4s;
-        border-radius: 34px;
-    }
-
-        .toggle-switch .slider:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            border-radius: 50%;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition: 0.4s;
-        }
-
-input:checked + .slider {
-    background-color: #1fc7ff;
-}
-
-    input:checked + .slider:before {
-        transform: translateX(26px);
-    }
 
 /* Media Queries */
 @media (max-width: 991px) {
@@ -244,20 +162,11 @@ input:checked + .slider {
         text-align: center;
     }
 
-        .home .content h5 {
-            font-size: 3rem;
-        }
-
-        .home .content h3 {
-            font-size: 4.5rem;
-        }
-
-        .home .content h6 {
-            font-size: 3rem;
-        }
-
+        .home .content h5,
+        .home .content h3,
+        .home .content h6,
         .home .content p {
-            font-size: 2rem;
+            font-size: 3rem;
         }
 }
 
@@ -272,10 +181,7 @@ input:checked + .slider {
     display: flex;
     min-height: 100vh;
     align-items: center;
-    background-color: #d3d3d3;
-    background: url(images/abstract-web-background-1.jpg) no-repeat; /* Background image */
-    background-size: cover;
-    background-position: center;
+    background: url(images/abstract-web-background-1.jpg) no-repeat center center/cover;
 }
 
 .home-container {
@@ -309,11 +215,11 @@ input:checked + .slider {
     text-align: center;
 }
 
-.content h5,
-.content h3,
-.content h6 {
-    margin: 10px 0;
-}
+    .content h5,
+    .content h3,
+    .content h6 {
+        margin: 10px 0;
+    }
 
 .right-side {
     width: 50%;
@@ -328,24 +234,24 @@ input:checked + .slider {
     object-fit: contain;
 }
 
-/* Default screen sizes (non-small) */
+/* Default font sizes */
 .home .content h5 {
-    font-size: 3rem; /* h5 font size */
+    font-size: 3rem;
 }
 
 .home .content h3 {
-    font-size: 4.5rem; /* h3 font size */
+    font-size: 4.5rem;
 }
 
 .home .content h6 {
-    font-size: 3rem; /* h6 font size */
+    font-size: 3rem;
 }
 
 .home .content p {
-    font-size: 2rem; /* Paragraph font size */
+    font-size: 2rem;
 }
 
-/* Media Queries for screen size adjustment */
+/* Media Queries for smaller screens */
 @media (max-width: 768px) {
     .home-container {
         flex-direction: column;
@@ -390,12 +296,5 @@ input:checked + .slider {
         width: 100%;
         max-width: 350px;
         height: auto;
-    }
-}
-
-/* Media query for screen size less than 450px */
-@media (max-width: 450px) {
-    html {
-        font-size: 50%;
     }
 }
