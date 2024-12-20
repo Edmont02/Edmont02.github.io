@@ -305,7 +305,7 @@ section {
     }
 }
 
-/* Updated Project Section Styles */
+/* Project Section Styles */
 
 .projects-container {
     display: flex;
@@ -438,3 +438,70 @@ section {
     .contact-link span {
         font-size: 1.5rem;
     }
+
+/* Project Pages Styling */
+.project-details-page {
+    padding: 2rem 7%;
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+    padding-top: 12rem;
+}
+
+.project-header-page h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--hover-color);
+    margin-bottom: 2rem;
+}
+
+.project-content-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--dark-header);
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.project-image-large-page {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-content-page p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.project-content-page ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+    .project-content-page ul li {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+
+.project-content-page .btn-page {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s;
+    text-decoration: none;
+}
+
+.project-content-page .btn-page:hover {
+    background-color: var(--hover-color);
+}
